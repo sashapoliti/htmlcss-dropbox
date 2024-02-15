@@ -39,17 +39,63 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 }
+.button {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    display: inline-block;
+    cursor: pointer;
+}
 
 /* header */
 header {
     background-color: var(--color-light-blue);
+    position: relative;
 }
 header nav {
     width: 100%;
     background-color: var(--color-white);
+    position: fixed;
+    z-index: 3000;
+    box-shadow: 0 1px 3px #66666677
+}
+#logo {
+    margin: 0 0 -4px -10px;
 }
 nav li {
     padding: 25px 20px;
+}
+nav .button {
+    padding: 7px 14px;
+    margin-left: -14px;
+}
+#jumbotron {
+    padding-top: 100px;
+    position: relative;
+    top: 80px;
+}
+header h1 {
+    font-size: 80px;
+    font-weight: 750;
+    padding-bottom: 37px;
+}
+header .left {
+    width: 30%;
+}
+header .right {
+    width: 70%;
+}
+#jumbotron img {
+    width: 100%;
+}
+#jumbotron .button {
+    padding: 10px 15px;
+    margin: 30px 0;
+}
+.fa-arrow-down {
+    color: var(--color-black);
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 70px;
 }
 
 /* footer */
@@ -61,6 +107,9 @@ footer {
 /* flex utility */
 .d-flex {
     display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
 .s-between {
     justify-content: space-between;
