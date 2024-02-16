@@ -244,11 +244,15 @@ section h3 {
   width: 50%;
 }
 .square-middle {
-  padding: 50px;
+  aspect-ratio: 1 / 1;
+  padding: 50px;  
+  overflow-y: auto;
 }
 .square-middle p {
-  padding-bottom: 50px;
-  overflow-y: auto;
+  margin-bottom: 50px;
+}
+#call-to-action h2 {
+  color: var(--color-burgundy);
 }
 
 /* footer */
