@@ -110,7 +110,7 @@ section .right {
 }
 
 /* main */
-section, footer {
+section {
   padding-top: 140px;
 }
 section h2 {
@@ -284,6 +284,16 @@ footer {
   background-color: var(--color-black);
   color: var(--color-white);
   margin-top: 140px;
+  padding-top: 120px;
+}
+footer a {
+  color: var(--color-white);
+}
+footer h2 {
+  margin-bottom: 30px;
+}
+footer li {
+  margin-bottom: 15px;
 }
 
 /* text utility */
