@@ -110,7 +110,7 @@ section .right {
 }
 
 /* main */
-section {
+section, footer {
   padding-top: 140px;
 }
 section h2 {
@@ -143,6 +143,7 @@ section h3 {
 }
 .container-check:hover input ~ .checkmark {
   background-color: var(--color-gray);
+  transition-duration: 0.2s;
 }
 .container-check input:checked ~ .checkmark {
   border: 5px solid var(--color-dark-blue);
@@ -253,12 +254,36 @@ section h3 {
 }
 #call-to-action h2 {
   color: var(--color-burgundy);
+  margin-bottom: 80px;
+}
+.call-box {
+  width: 50%;
+}
+.call-box:last-of-type {
+  width: calc(100% / 3 - 30px);
+}
+.call-box .button {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+}
+section summary {
+  padding: 40px 40px 40px 0;
+  border-top: 1px solid var(--color-dark-gray);
+  cursor: pointer;
+}
+section details p {
+  padding-bottom: 40px;
+}
+.long-line {
+  border-top: 1px solid var(--color-dark-gray);
 }
 
 /* footer */
 footer {
   background-color: var(--color-black);
   color: var(--color-white);
+  margin-top: 140px;
 }
 
 /* text utility */
@@ -322,6 +347,12 @@ footer {
 .j-center {
   justify-content: center;
 }
+.j-flexend {
+  justify-content: flex-end;
+}
 .ai-center {
   align-items: center;
+}
+.ai-baseline {
+  align-items: baseline;
 }
