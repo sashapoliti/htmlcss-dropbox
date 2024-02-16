@@ -19,6 +19,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--color-white);
   color: var(--color-black);
+  min-width: 1200px;
 }
 :root {
   --color-dark-blue: #0061ff;
@@ -128,9 +129,8 @@ section h3 {
   display: none;
 }
 .checkmark {
-  max-width: 20px;
+  width: 20px;
   height: 20px;
-  aspect-ratio: 1 / 1;
   margin-right: 5px;
   border: 2px solid var(--color-gray);
   border-radius: 50%;
@@ -146,7 +146,7 @@ section h3 {
     gap: 30px;
     row-gap: 45px;
 }
-.box{
+.box {
     width: calc(100% / 3 - 30px);
     font-size: 14px;
     border: 1px solid var(--color-gray);
@@ -160,16 +160,36 @@ section h3 {
   padding: 10px 0;
 }
 .box-content {
-  padding: 30px 30px;
+  padding: 30px 30px 35px 30px;
 }
 .box-content li:not(.not-li) {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .fa-ul {
-  margin-left: 20px;
+  margin-left: 16px;
 }
-.box-content ul {
+.box-content ul:not(.box-content ul:last-child) {
   padding-bottom: 40px;
+}
+.box-content .button {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.line {
+  width: 20%;
+  border-bottom: 1px solid var(--color-gray);
+  margin: 40px 0 50px 0;
+}
+.box-content h4 {
+  margin-bottom: 30px;
+}
+.fa-check {
+  color: var(--color-dark-blue);
+}
+.right-box {
+  width: calc(100% / 3);
 }
 
 
@@ -183,6 +203,12 @@ footer {
 /* text utility */
 .c-darkgray {
   color: var(--color-dark-gray);
+}
+.c-anchor {
+  color: #0000EE;
+}
+.underline {
+  text-decoration: underline;
 }
 
 /* padding utility */
