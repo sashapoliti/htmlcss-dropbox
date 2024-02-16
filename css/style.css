@@ -51,6 +51,10 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+.alt-button {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
 
 /* header */
 header {
@@ -84,10 +88,12 @@ header h1 {
   font-weight: 750;
   padding-bottom: 37px;
 }
-header .left {
+header .left,
+section .left {
   width: 30%;
 }
-header .right {
+header .right,
+section .right {
   width: 70%;
 }
 #jumbotron img {
@@ -106,14 +112,14 @@ header .right {
 
 /* main */
 section {
-  padding-top: 130px;
+  padding-top: 140px;
 }
 section h2 {
   font-size: 40px;
   padding-bottom: 60px;
 }
 section h3 {
-  font-size: 25px;
+  font-size: 24px;
   padding-bottom: 15px;
 }
 .container-check {
@@ -143,16 +149,16 @@ section h3 {
   border: 5px solid var(--color-dark-blue);
 }
 .container-boxes {
-    gap: 30px;
-    row-gap: 45px;
+  gap: 30px;
+  row-gap: 45px;
 }
 .box {
-    width: calc(100% / 3 - 30px);
-    font-size: 14px;
-    border: 1px solid var(--color-gray);
+  width: calc(100% / 3 - 30px);
+  font-size: 14px;
+  border: 1px solid var(--color-gray);
 }
 .box:last-of-type {
-    width: 100%;
+  width: 100%;
 }
 .box-title {
   border-bottom: 1px solid var(--color-gray);
@@ -191,8 +197,21 @@ section h3 {
 .right-box {
   width: calc(100% / 3);
 }
-
-
+.partner-right {
+  width: 40%;
+  padding: 50px;
+}
+.partner-left {
+  width: 60%;
+}
+.partner img {
+  width: 100%;
+}
+.partner-right .button {
+  border: 1px solid var(--color-black);
+  padding: 10px 15px;
+  margin-top: 30px;
+}
 
 /* footer */
 footer {
@@ -205,7 +224,7 @@ footer {
   color: var(--color-dark-gray);
 }
 .c-anchor {
-  color: #0000EE;
+  color: #0000ee;
 }
 .underline {
   text-decoration: underline;
