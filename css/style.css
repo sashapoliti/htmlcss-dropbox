@@ -58,7 +58,6 @@ body {
 
 /* header */
 header {
-  background-color: var(--color-light-blue);
   position: relative;
 }
 header nav {
@@ -194,14 +193,14 @@ section h3 {
 .fa-check {
   color: var(--color-dark-blue);
 }
-.right-box {
+.right-box, .square>div {
   width: calc(100% / 3);
 }
 .partner-right {
   width: 40%;
   padding: 50px;
 }
-.partner-left {
+.partner-left, .simple h2 {
   width: 60%;
 }
 .partner-right .button {
@@ -219,6 +218,14 @@ section h3 {
 .operations p {
   margin-top: 15px;
   padding-right: 5px;
+}
+.square-box {
+  width: 50%;
+  aspect-ratio: 1;
+}
+.square-box img {
+  width: 45%;
+  filter: invert(100%);
 }
 
 /* footer */
@@ -238,6 +245,35 @@ footer {
   text-decoration: underline;
 }
 
+/* bg color utility */
+.bgc-lightgreen {
+  background-color: var(--color-light-green);
+}
+.bgc-burgundy {
+  background-color: var(--color-burgundy);
+}
+.bgc-blue {
+  background-color: var(--color-blue);
+}
+.bgc-lightred {
+  background-color: var(--color-light-red);
+}
+.bgc-notwhite {
+  background-color: var(--color-not-white);
+}
+.bgc-darkred {
+  background-color: var(--color-dark-red);
+}
+.bgc-lightblue {
+  background-color: var(--color-light-blue);
+}
+.bgc-ultramarine {
+  background-color: var(--color-ultramarine);
+}
+.bgc-yellow {
+  background-color: var(--color-yellow);
+}
+
 /* padding utility */
 .paddleft-5 {
   padding-left: 5px;
@@ -255,6 +291,9 @@ footer {
 }
 .s-between {
   justify-content: space-between;
+}
+.j-center {
+  justify-content: center;
 }
 .ai-center {
   align-items: center;
