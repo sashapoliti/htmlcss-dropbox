@@ -19,7 +19,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--color-white);
   color: var(--color-black);
-  min-width: 1200px;
+  min-width: 1100px;
 }
 :root {
   --color-dark-blue: #0061ff;
@@ -222,6 +222,19 @@ section h3 {
 .square-box {
   width: 50%;
   aspect-ratio: 1;
+  position: relative;
+  cursor: pointer;
+}
+.square-border {
+  display: none;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 15px solid rgba(255, 255, 255, 0.418);
+  position: absolute;
+  top: 0;  
+}
+.square-box:hover .square-border {
+  display: block;
 }
 .square-box img {
   width: 45%;
