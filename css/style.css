@@ -96,7 +96,7 @@ header .right,
 section .right {
   width: 70%;
 }
-#jumbotron img {
+#jumbotron img, .partner img, .operations img {
   width: 100%;
 }
 #jumbotron .button {
@@ -204,13 +204,21 @@ section h3 {
 .partner-left {
   width: 60%;
 }
-.partner img {
-  width: 100%;
-}
 .partner-right .button {
   border: 1px solid var(--color-black);
   padding: 10px 15px;
   margin-top: 30px;
+}
+.operations {
+  gap: 30px;
+  row-gap: 45px;
+}
+.operations>div {
+  width: calc(100% / 3 - 30px);
+}
+.operations p {
+  margin-top: 15px;
+  padding-right: 5px;
 }
 
 /* footer */
