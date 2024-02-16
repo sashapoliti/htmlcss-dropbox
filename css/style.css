@@ -221,14 +221,14 @@ section h3 {
 }
 .square-box {
   width: 50%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   position: relative;
   cursor: pointer;
 }
 .square-border {
   display: none;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   border: 15px solid rgba(255, 255, 255, 0.418);
   position: absolute;
   top: 0;  
@@ -239,6 +239,16 @@ section h3 {
 .square-box img {
   width: 45%;
   filter: invert(100%);
+}
+.square-middle img {
+  width: 50%;
+}
+.square-middle {
+  padding: 50px;
+}
+.square-middle p {
+  padding-bottom: 50px;
+  overflow-y: auto;
 }
 
 /* footer */
