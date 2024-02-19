@@ -102,7 +102,7 @@ nav .button {
   top: 82px;
   z-index: 2999;
   width: 100vw;
-  background-color: var(--color-white);  
+  background-color: var(--color-white);
   box-shadow: 0 1px 3px #66666677;
 }
 .dropdown-why-start:hover .dropdown-why {

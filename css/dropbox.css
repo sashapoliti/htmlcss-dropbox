@@ -1,8 +1,44 @@
 /* header */
 #jumbotron-dropbox {
-    background-color: #D8D3CB;
-    padding-top: 85px;
+  background-color: #d8d3cb;
+  padding-top: 85px;
 }
-#jumbotron-dropbox left {
-    padding: 48px;
+#jumbotron-dropbox .left {
+  background-color: #1e1919;
+  color: #f7f5f2;
+  padding: 48px;
+  width: 35%;
+}
+#jumbotron-dropbox h4 {
+  margin-bottom: 15px;
+}
+#jumbotron-dropbox h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: -7px;
+}
+#jumbotron-dropbox p {
+  margin-bottom: 30px;
+}
+#jumbotron-dropbox .button {
+  width: 70%;
+  color: #1e1919;
+  font-weight: bold;
+  padding: 25px 25px;
+  margin-bottom: 30px;
+}
+#jumbotron-dropbox .button:hover {
+  background-color: #438afd;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+#jumbotron-dropbox a:last-of-type {
+    color: var(--color-white);
+}
+#jumbotron-dropbox img {
+  display: block;
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: 100% 45%;
 }
