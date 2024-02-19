@@ -97,15 +97,22 @@ nav .button {
 }
 .dropdown-why {
   display: none;
-  width: 100%;
-  background-color: var(--color-white);
+  position: absolute;
+  left: 0;
+  top: 82px;
+  z-index: 2999;
+  width: 100vw;
+  background-color: var(--color-white);  
+  box-shadow: 0 1px 3px #66666677;
 }
 .dropdown-why-start:hover .dropdown-why {
   display: block;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .dropdown-why ul {
   width: 259px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .dropdown-why ul:first-of-type {
   margin-left: 149px;
