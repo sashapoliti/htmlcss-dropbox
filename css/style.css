@@ -95,7 +95,9 @@ header .right,
 section .right {
   width: 70%;
 }
-#jumbotron img, .partner img, .operations img {
+#jumbotron img,
+.partner img,
+.operations img {
   width: 100%;
 }
 #jumbotron .button {
@@ -194,14 +196,16 @@ section h3 {
 .fa-check {
   color: var(--color-dark-blue);
 }
-.right-box, .square>div {
+.right-box,
+.square > div {
   width: calc(100% / 3);
 }
 .partner-right {
   width: 40%;
   padding: 50px;
 }
-.partner-left, .simple h2 {
+.partner-left,
+.simple h2 {
   width: 60%;
 }
 .partner-right .button {
@@ -213,7 +217,7 @@ section h3 {
   gap: 30px;
   row-gap: 45px;
 }
-.operations>div {
+.operations > div {
   width: calc(100% / 3 - 30px);
 }
 .operations p {
@@ -232,7 +236,7 @@ section h3 {
   aspect-ratio: 1 / 1;
   border: 15px solid rgba(255, 255, 255, 0.418);
   position: absolute;
-  top: 0;  
+  top: 0;
 }
 .square-box:hover .square-border {
   display: block;
@@ -246,7 +250,7 @@ section h3 {
 }
 .square-middle {
   aspect-ratio: 1 / 1;
-  padding: 50px;  
+  padding: 50px;
   overflow-y: auto;
 }
 .square-middle p {
@@ -275,6 +279,15 @@ section summary {
 section details p {
   padding-bottom: 40px;
 }
+.angle-up {
+  display: none;
+}
+details[open] .angle-down {
+    display: none;
+}
+details[open] .angle-up {
+    display: block;
+}
 .long-line {
   border-top: 1px solid var(--color-dark-gray);
 }
@@ -289,6 +302,11 @@ footer {
 footer a {
   color: var(--color-white);
 }
+footer a:hover {
+    text-decoration: underline;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
 footer h2 {
   margin-bottom: 30px;
 }
@@ -296,9 +314,9 @@ footer li {
   margin-bottom: 15px;
 }
 footer .line {
-border-color: var(--color-white);
-width: 10%;
-margin-top: 100px;
+  border-color: var(--color-white);
+  width: 10%;
+  margin-top: 100px;
 }
 footer .fa-earth-americas {
   margin: 0 5px 50px 0;
