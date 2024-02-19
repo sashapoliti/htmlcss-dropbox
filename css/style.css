@@ -107,7 +107,7 @@ nav .button {
 }
 .dropdown-why-start:hover .dropdown-why {
   display: block;
-  transition-duration: 0.2s;
+  transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
 .dropdown-why ul {
