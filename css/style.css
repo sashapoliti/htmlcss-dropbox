@@ -77,15 +77,15 @@ header nav {
   z-index: 3000;
   box-shadow: 0 1px 3px #66666677;
 }
-#logo {
+#logo img {
   padding: 30px 20px 30px 2px;
   margin-bottom: -5px;
 }
-nav a:not(.button, .dropdown-why a) {
+nav a:not(.button, #logo, .dropdown-why a) {
   color: var(--color-black);
   padding: 25px 20px;
 }
-nav a:not(.button, .dropdown-why a):hover {
+nav a:not(.button, #logo, .dropdown-why a):hover {
   color: var(--color-dark-blue);
   border-bottom: 3px solid var(--color-dark-blue);
   transition-duration: 0.1s;
