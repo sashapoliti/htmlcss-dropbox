@@ -70,3 +70,26 @@ section h2 {
 .box-dropbox h3 {
     margin-top: 15px;
 }
+.container-boxes-large {
+    gap: 15px;
+}
+.box-large {
+    width: calc(100% / 2 - 15px);
+}
+.box-large img {
+    display: block;
+    width: 100%;
+}
+.box-large-content {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 48px;
+}
+.box-large-content p {
+    margin: 30px 0;
+}
+.box-large-content .button {
+    font-weight: bold;
+    width: 45%;
+    padding: 16px 24px;
+}
